@@ -16,7 +16,7 @@
 
 ## Environment Variables
 
-PORT=5001
+PORT=5002
 MONGO_URI=your_mongodb_connection_string
 
 ## API Endpoints
