@@ -17,7 +17,7 @@
 ## Environment Variables
 
 PORT=5002
-MONGO_URI=your_mongodb_connection_string
+MONGO_URI= mongodb://127.0.0.1:27017/recipeApp
 
 ## API Endpoints
 
