@@ -16,16 +16,16 @@
 
 ## Environment Variables
 
-PORT=5001
+PORT=5002
 MONGO_URI=your_mongodb_connection_string
 
 ## API Endpoints
 
-POST /api/recipes
-GET /api/recipes
-GET /api/recipes/:id
-PUT /api/recipes/:id
-DELETE /api/recipes/:id
+POST /api/recipeapp
+GET /api/recipeapp
+GET /api/recipeapp/:id
+PUT /api/recipeapp/:id
+DELETE /api/recipeapp/:id
 
 ## Deployment
 

@@ -16,9 +16,9 @@ router.get("/recipeapps", getAllRecipes);
 
 router.get("/recipeapps/:id", singleRecipes );
 
-router.put("recipeapps/:id", recipeUpdate);
+router.put("/recipeapps/:id", recipeUpdate);
 
-router.delete("recipeapps/:id",receiptDelete);
+router.delete("/recipeapps/:id",receiptDelete);
 
 
 export default router;

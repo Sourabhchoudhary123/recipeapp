@@ -8,6 +8,7 @@ import recipeRoutes from "./routes/recipeRoutes.js";
 dotenv.config(); //it will load the env variable
 connectDB(); // connect to mongodb
 
+//////////////////
 const app = express();// create the express application
 
 app.use(express.json()); // we have to use this middleware when we post the data using the post method
