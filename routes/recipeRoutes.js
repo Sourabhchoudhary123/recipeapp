@@ -1,4 +1,5 @@
 import express from "express";
+import mongoose from "mongoose";
 import {createRecipe ,getAllRecipes,singleRecipes,recipeUpdate,receiptDelete } from "../controllers/recipeController.js";
 
 // we have to import router 

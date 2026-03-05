@@ -95,9 +95,7 @@ export const recipeUpdate = async (req, res) => {
 
 export const receiptDelete = async (req, res) => {
     try {
-        const recipe = await Recipe.findByIdAndUpdate(
-            req.param.id
-        );
+        const recipe = await Recipe.findByIdAndDelete(req.params.id);
         if (!recipe) {
             return res.status(404).json({
                 success: false,

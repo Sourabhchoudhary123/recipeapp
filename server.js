@@ -22,8 +22,8 @@ connectDB();
 
 // port and host: use Render's PORT, fallback to 5002, bind to 0.0.0.0
 const PORT = process.env.PORT || 5002;
-const HOST = "0.0.0.0";
-
+let HOST = "0.0.0.0";
 app.listen(PORT, HOST, () => {
   console.log(`Server is running on http://${HOST}:${PORT}`);
 });
+
