@@ -18,7 +18,7 @@ app.get("/", (req, res) => {
 });
 
 // recipe routes
-app.use("/recipes", recipeRoutes);
+app.use("/", recipeRoutes);
 
 // connect database
 connectDB();
