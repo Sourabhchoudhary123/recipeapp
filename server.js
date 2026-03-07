@@ -25,8 +25,7 @@ connectDB();
 
 // server port
 const PORT = process.env.PORT || 5002;
-const HOST = '_mongodb._tcp.cluster0.yya900u.mongodb.net'
 
 app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}${HOST}`);
+  console.log(`Server running on port ${PORT}`);
 });
