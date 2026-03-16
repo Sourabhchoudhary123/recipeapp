@@ -36,7 +36,7 @@ export const getAllRecipes = async (req, res) => {
 };
 
 //get Single Recipe
-export const singleRecipes = async (req, res) => {
+export const getRecipeById = async (req, res) => {
     try {
         const { id } = req.params;
 
@@ -69,7 +69,7 @@ export const singleRecipes = async (req, res) => {
 };
 // UpdatedRecipe
 
-export const recipeUpdate = async (req, res) => {
+export const updateRecipe = async (req, res) => {
     try {
         const recipe = await Recipe.findByIdAndUpdate(
             req.params.id,
@@ -93,7 +93,7 @@ export const recipeUpdate = async (req, res) => {
 
 // Delete Recipe
 
-export const receiptDelete = async (req, res) => {
+export const deleteRecipe = async (req, res) => {
     try {
         const recipe = await Recipe.findByIdAndDelete(req.params.id);
         if (!recipe) {

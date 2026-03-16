@@ -19,7 +19,8 @@ const recipeSchema = new mongoose.Schema(
         cookingTime:{
             type:Number,
             required:[true,"cooking Time is required"],
-            min:1
+            min:1,
+            max:50
         }
     },
     {timestamps:true}

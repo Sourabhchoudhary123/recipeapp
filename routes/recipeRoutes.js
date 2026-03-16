@@ -1,6 +1,6 @@
 import express from "express";
 import mongoose from "mongoose";
-import {createRecipe ,getAllRecipes,singleRecipes,recipeUpdate,receiptDelete } from "../controllers/recipeController.js";
+import {createRecipe ,getAllRecipes,getRecipeById,updateRecipe,deleteRecipe } from "../controllers/recipeController.js";
 
 // we have to import router 
 const router = express.Router() 
@@ -15,11 +15,11 @@ router.post("/recipeapps", createRecipe)
 
 router.get("/recipeapps", getAllRecipes);
 
-router.get("/recipeapps/:id", singleRecipes );
+router.get("/recipeapps/:id", getRecipeById );
 
-router.put("/recipeapps/:id", recipeUpdate);
+router.put("/recipeapps/:id", updateRecipe);
 
-router.delete("/recipeapps/:id",receiptDelete);
+router.delete("/recipeapps/:id",deleteRecipe);
 
 
 export default router;

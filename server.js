@@ -5,6 +5,7 @@ import connectDB from "./config/db.js";
 import recipeRoutes from "./routes/recipeRoutes.js";
 
 dotenv.config();
+console.log("ENV MONGO_URL:", process.env.MONGO_URL);
 
 const app = express();
 
@@ -18,7 +19,7 @@ app.get("/", (req, res) => {
 });
 
 // recipe routes
-app.use("/", recipeRoutes);
+app.use("/recipe", recipeRoutes);
 
 // connect database
 connectDB();
